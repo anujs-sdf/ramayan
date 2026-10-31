@@ -1,0 +1,7 @@
+services:
+  ramayana-story:
+    build: .
+    container_name: ramayana-story
+    ports:
+      - "8080:80"
+    restart: unless-stopped

@@ -1,0 +1,272 @@
+<!doctype html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#173b33">
+  <meta name="description" content="Satellite imagery, the Ramayana tradition, and what the evidence can and cannot tell us about Ram Setu.">
+  <meta name="robots" content="index,follow,max-image-preview:large">
+  <meta property="og:type" content="article">
+  <meta property="og:site_name" content="The Ramayana">
+  <meta property="og:locale" content="en_US">
+  <meta property="og:title" content="Ram Setu: what the evidence can tell us">
+  <meta property="og:description" content="A respectful, evidence-led look at satellite imagery, geography, and the Ramayana tradition.">
+  <meta property="og:image" content="https://upload.wikimedia.org/wikipedia/commons/8/8d/AdamsBridge02-NASA.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Ram Setu: what the evidence can tell us">
+  <meta name="twitter:description" content="A respectful, evidence-led look at satellite imagery, geography, and the Ramayana tradition.">
+  <meta name="twitter:image" content="https://upload.wikimedia.org/wikipedia/commons/8/8d/AdamsBridge02-NASA.jpg">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="canonical" href="evidence.html">
+  <title>Ram Setu: what the evidence can tell us</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Gelasio:ital,wght@0,400;0,500;0,600;1,400&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      color-scheme: dark;
+      --forest: #173b33;
+      --deep: #102b25;
+      --paper: #f2ead8;
+      --muted: #d7d0bc;
+      --saffron: #e4a95c;
+      --mint: #a7c7b4;
+      --line: rgba(242, 234, 216, .2);
+      --display: "Gelasio", Georgia, serif;
+      --body: "DM Sans", "Segoe UI", sans-serif;
+    }
+
+    html[lang="hi"] { --display: "Noto Sans Devanagari", "Nirmala UI", sans-serif; --body: "Noto Sans Devanagari", "Nirmala UI", sans-serif; }
+    html[lang="ja"] { --display: "Noto Sans JP", "Yu Gothic", sans-serif; --body: "Noto Sans JP", "Yu Gothic", sans-serif; }
+    html[lang="ru"] { --display: "Noto Sans", "Segoe UI", sans-serif; --body: "Noto Sans", "Segoe UI", sans-serif; }
+    html[lang="ar"] { --display: "Noto Sans Arabic", "Tahoma", sans-serif; --body: "Noto Sans Arabic", "Tahoma", sans-serif; }
+    html[lang="zh"] { --display: "Noto Sans SC", "Microsoft YaHei", sans-serif; --body: "Noto Sans SC", "Microsoft YaHei", sans-serif; }
+
+    * { box-sizing: border-box; }
+
+    body {
+      min-width: 320px;
+      min-height: 100vh;
+      margin: 0;
+      background: radial-gradient(ellipse at 75% 4%, rgba(87, 125, 103, .23), transparent 35%), var(--forest);
+      color: var(--paper);
+      font-family: var(--body);
+    }
+
+    a { color: var(--mint); }
+    a:hover, a:focus-visible { color: var(--saffron); }
+    .sr-only { position: absolute; width: 1px; height: 1px; padding: 0; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0; }
+
+    .page { width: min(1050px, calc(100% - 40px)); margin: 0 auto; }
+
+    .masthead {
+      display: flex;
+      min-height: 82px;
+      align-items: center;
+      justify-content: space-between;
+      gap: 18px;
+      border-bottom: 1px solid var(--line);
+    }
+
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 11px;
+      color: var(--paper);
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: .08em;
+      text-decoration: none;
+    }
+
+    .seal {
+      display: grid;
+      width: 36px;
+      height: 36px;
+      place-items: center;
+      border: 1px solid rgba(228, 169, 92, .75);
+      border-radius: 50%;
+      color: var(--saffron);
+      font-family: var(--display);
+      font-size: 20px;
+      letter-spacing: 0;
+    }
+
+    .language-tools { display: flex; align-items: center; gap: 12px; }
+
+    select, .back-link {
+      min-height: 38px;
+      padding: 0 12px;
+      border: 1px solid var(--line);
+      border-radius: 3px;
+      background: var(--deep);
+      color: var(--paper);
+      font: inherit;
+      font-size: 11px;
+    }
+
+    .back-link { display: inline-flex; align-items: center; color: var(--paper); text-decoration: none; }
+    main { padding: clamp(42px, 8vw, 82px) 0 76px; }
+    .eyebrow { color: var(--saffron); font-size: 11px; font-weight: 700; letter-spacing: .14em; text-transform: uppercase; }
+    h1, h2 { font-family: var(--display); font-weight: 400; }
+    h1 { max-width: 18ch; margin: 14px 0 20px; font-size: clamp(42px, 7vw, 72px); line-height: 1.03; }
+    .intro { max-width: 76ch; margin: 0 0 38px; color: var(--muted); font-family: var(--display); font-size: clamp(18px, 2.4vw, 23px); line-height: 1.65; }
+
+    .satellite-card {
+      margin: 0 0 54px;
+      overflow: hidden;
+      border: 1px solid rgba(228, 169, 92, .5);
+      background: var(--deep);
+    }
+
+    .satellite-card img { display: block; width: 100%; max-height: 540px; object-fit: cover; background: #193438; }
+    figcaption { display: grid; gap: 9px; padding: 17px 20px 20px; color: var(--muted); font-size: 12px; line-height: 1.7; }
+    figcaption a { width: fit-content; color: var(--saffron); }
+
+    .evidence-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 14px; }
+    .evidence-card { padding: clamp(20px, 3vw, 30px); border: 1px solid var(--line); background: rgba(16, 43, 37, .68); }
+    .evidence-card h2 { margin: 0 0 13px; color: var(--saffron); font-size: clamp(23px, 3vw, 29px); }
+    .evidence-card p { margin: 0; color: var(--muted); font-size: 13px; line-height: 1.85; }
+    .summary { grid-column: 1 / -1; border-color: rgba(228, 169, 92, .55); }
+
+    .sources { margin-top: 54px; padding-top: 26px; border-top: 1px solid var(--line); }
+    .sources h2 { margin: 0 0 18px; font-size: 28px; }
+    .sources ol { display: grid; gap: 13px; margin: 0; padding-inline-start: 22px; color: var(--muted); font-size: 13px; line-height: 1.7; }
+    .source-note { margin: 20px 0 0; color: var(--muted); font-size: 11px; line-height: 1.7; }
+
+    footer { display: flex; justify-content: space-between; gap: 15px; padding: 18px 0; border-top: 1px solid var(--line); color: var(--muted); font-size: 10px; }
+    html[dir="rtl"] .brand, html[dir="rtl"] .masthead, html[dir="rtl"] main, html[dir="rtl"] footer { direction: rtl; }
+    html[dir="rtl"] .eyebrow { letter-spacing: 0; }
+
+    @media (max-width: 650px) {
+      .page { width: calc(100% - 32px); }
+      .masthead { min-height: 70px; flex-wrap: wrap; padding: 12px 0; }
+      .brand { font-size: 9px; }
+      .language-tools { gap: 7px; }
+      select, .back-link { min-height: 34px; padding: 0 8px; font-size: 10px; }
+      .evidence-grid { grid-template-columns: 1fr; }
+      .summary { grid-column: auto; }
+      .satellite-card img { min-height: 210px; object-fit: contain; }
+      footer { flex-direction: column; }
+    }
+  </style>
+</head>
+<body>
+  <div class="page">
+    <header class="masthead">
+      <a class="brand" id="brandLink" href="index.html">
+        <span class="seal" aria-hidden="true">रा</span>
+        <span>THE RAMAYANA</span>
+      </a>
+      <div class="language-tools">
+        <label class="sr-only" for="languageSelect" id="languageLabel">Language</label>
+        <select id="languageSelect" aria-label="Language">
+          <option value="en">English</option>
+          <option value="hi">हिन्दी</option>
+          <option value="de">Deutsch</option>
+          <option value="ru">Русский</option>
+          <option value="ja">日本語</option>
+          <option value="es">Español</option>
+          <option value="fr">Français</option>
+          <option value="pt">Português</option>
+          <option value="zh">中文</option>
+          <option value="ar">العربية</option>
+        </select>
+        <a class="back-link" id="backLink" href="index.html">Back to the story</a>
+      </div>
+    </header>
+
+    <main>
+      <p class="eyebrow" id="eyebrow"></p>
+      <h1 id="pageTitle"></h1>
+      <p class="intro" id="intro"></p>
+
+      <figure class="satellite-card">
+        <img
+          id="satelliteImage"
+          src="https://upload.wikimedia.org/wikipedia/commons/8/8d/AdamsBridge02-NASA.jpg"
+          alt="NASA orbital photograph showing the chain of shoals between India and Sri Lanka."
+          width="1200"
+          height="800"
+          fetchpriority="high"
+        >
+        <figcaption>
+          <span id="imageCaption"></span>
+          <a href="https://commons.wikimedia.org/wiki/File:AdamsBridge02-NASA.jpg" target="_blank" rel="noopener noreferrer" id="imageSource"></a>
+        </figcaption>
+      </figure>
+
+      <section class="evidence-grid" aria-label="Evidence and context">
+        <article class="evidence-card">
+          <h2 id="observedTitle"></h2>
+          <p id="observed"></p>
+        </article>
+        <article class="evidence-card">
+          <h2 id="limitsTitle"></h2>
+          <p id="limits"></p>
+        </article>
+        <article class="evidence-card">
+          <h2 id="traditionTitle"></h2>
+          <p id="tradition"></p>
+        </article>
+        <article class="evidence-card summary">
+          <h2 id="summaryTitle"></h2>
+          <p id="summary"></p>
+        </article>
+      </section>
+
+      <section class="sources">
+        <h2 id="sourcesTitle"></h2>
+        <ol>
+          <li><a href="https://commons.wikimedia.org/wiki/File:AdamsBridge02-NASA.jpg" target="_blank" rel="noopener noreferrer" id="sourceNASA"></a></li>
+          <li><a href="https://www.britannica.com/place/Adams-Bridge" target="_blank" rel="noopener noreferrer" id="sourceBritannica"></a></li>
+          <li><a href="https://www.valmikiramayan.net/utf8/yuddha/sarga22/yuddha_22_frame.htm" target="_blank" rel="noopener noreferrer" id="sourceText"></a></li>
+        </ol>
+        <p class="source-note" id="sourceNote"></p>
+      </section>
+    </main>
+
+    <footer>
+      <span>राम राम · धर्म · साहस · करुणा</span>
+      <a href="index.html" id="footerBack"></a>
+    </footer>
+  </div>
+  <script src="evidence-page.js"></script>
+  <script>
+    const params = new URLSearchParams(location.search);
+    const language = window.ramayanaEvidenceCopy[params.get("lang")] ? params.get("lang") : "en";
+    const copy = window.ramayanaEvidenceCopy[language];
+    document.documentElement.lang = language;
+    document.documentElement.dir = copy.dir;
+    document.title = copy.title;
+    document.querySelector('meta[name="description"]').content = copy.intro;
+    document.querySelector('meta[property="og:title"]').content = copy.title;
+    document.querySelector('meta[property="og:description"]').content = copy.intro;
+    document.querySelector('meta[name="twitter:title"]').content = copy.title;
+    document.querySelector('meta[name="twitter:description"]').content = copy.intro;
+    document.querySelector('link[rel="canonical"]').href = location.href;
+    document.querySelector("#languageLabel").textContent = copy.language;
+    document.querySelector("#languageSelect").value = language;
+    document.querySelector("#languageSelect").setAttribute("aria-label", copy.language);
+    document.querySelector("#satelliteImage").alt = copy.imageCaption;
+    for (const id of ["eyebrow", "intro", "imageCaption", "observedTitle", "observed", "limitsTitle", "limits", "traditionTitle", "tradition", "summaryTitle", "summary", "sourcesTitle", "sourceNASA", "sourceBritannica", "sourceText", "sourceNote"]) {
+      document.querySelector(`#${id}`).textContent = copy[id];
+    }
+    document.querySelector("#pageTitle").textContent = copy.title;
+    document.querySelector("#imageSource").textContent = copy.sourceNASA;
+    document.querySelector("#backLink").textContent = copy.back;
+    document.querySelector("#footerBack").textContent = copy.back;
+    const storyUrl = new URL("index.html", location.href);
+    storyUrl.searchParams.set("lang", language);
+    storyUrl.searchParams.set("scene", "0");
+    document.querySelector("#brandLink").href = storyUrl;
+    document.querySelector("#backLink").href = storyUrl;
+    document.querySelector("#footerBack").href = storyUrl;
+    document.querySelector("#languageSelect").addEventListener("change", (event) => {
+      const evidenceUrl = new URL(location.href);
+      evidenceUrl.searchParams.set("lang", event.currentTarget.value);
+      location.href = evidenceUrl;
+    });
+  </script>
+</body>
+</html>
