@@ -7,7 +7,7 @@ An interactive, choice-driven retelling of the Ramayana. Travel through eleven c
 - Eleven illustrated story chapters, two choices per chapter, and a personalized journey review.
 - Ten interface and story languages: English, Hindi, German, Russian, Japanese, Spanish, French, Portuguese, Simplified Chinese, and Arabic.
 - Right-to-left layout for Arabic.
-- A multilingual, source-linked evidence page about Ram Setu, including a NASA STS-59 satellite image and a clear distinction between observable geography, textual tradition, and what imagery cannot establish.
+- An English source guide with original summaries of the six Valmiki Ramayana Kandas represented on ValmikiRamayan.net, direct chapter-index links, translator credits, and a note that the translation has no stated open reuse license.
 - Search- and share-friendly metadata that follows the current language and chapter, including Open Graph, Twitter Cards, canonical and `hreflang` links, and JSON-LD.
 - Shareable chapter URLs such as `?lang=es&scene=1`.
 - Optional mantra background intensity and browser-generated Indian-classical-inspired ambient music. Music is off by default and starts only when enabled.
@@ -49,7 +49,7 @@ The Compose service builds the included `Dockerfile` and serves the static site 
 ## Project files
 
 - `index.html` — responsive interface, scene rendering, navigation, and audio controls.
-- `evidence.html`, `evidence-page.js` — multilingual evidence page, image, limitations, and references.
+- `valmiki.html` — original, source-linked summaries of the six Kandas available on ValmikiRamayan.net; no translated passages are reproduced.
 - `story-data.js` — English, Hindi, German, Russian, and Japanese story catalogs.
 - `extended-scenes.js` — additional scenes for the original five catalogs.
 - `journey-scenes.js` — four further journey chapters in the original five catalogs.
@@ -61,7 +61,7 @@ The Compose service builds the included `Dockerfile` and serves the static site 
 
 ## Artwork and audio
 
-The opening artwork is [Rama-Sita coronation](https://commons.wikimedia.org/wiki/File:Rama-Sita_coronation.jpg), identified on Wikimedia Commons as public domain. The evidence page links to a [NASA STS-59 photograph of Adam's Bridge](https://commons.wikimedia.org/wiki/File:AdamsBridge02-NASA.jpg) and explicitly notes that satellite imagery documents visible geography but cannot by itself determine formation age, process, or human involvement. Its references separate the physical landform from the Ramayana account and religious tradition. The remaining chapter illustrations are original inline SVG artwork. The ambient soundtrack is generated locally by the browser's Web Audio API; it does not load or transmit audio files.
+The opening artwork is [Rama-Sita coronation](https://commons.wikimedia.org/wiki/File:Rama-Sita_coronation.jpg), identified on Wikimedia Commons as public domain. The remaining chapter illustrations are original inline SVG artwork. The ambient soundtrack is generated locally by the browser's Web Audio API; it does not load or transmit audio files.
 
 SEO metadata is updated client-side for each chapter and language. Serve the site over HTTP(S) for canonical URLs, search indexing, and social sharing; opening the HTML directly with `file://` is intended only for local play.
 

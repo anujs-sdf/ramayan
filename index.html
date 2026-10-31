@@ -232,6 +232,7 @@
       font-size: 10px;
       font-weight: 700;
       text-transform: uppercase;
+      animation: arrive .4s ease both;
     }
 
     .chapter-label::before {
@@ -692,7 +693,7 @@
     <footer class="footer-note">
       <span id="footerStory">A retelling inspired by the Ramayana</span>
       <span>धर्म · साहस · करुणा</span>
-      <a id="evidenceLink" href="evidence.html">Evidence &amp; Ram Setu</a>
+      <a href="valmiki.html">Valmiki Ramayana source guide</a>
     </footer>
   </div>
 
@@ -893,9 +894,6 @@
       musicToggle.textContent = state.musicOn ? copy.musicOn : copy.musicOff;
       musicToggle.setAttribute("aria-pressed", String(state.musicOn));
       document.querySelector("#footerStory").textContent = copy.footerStory;
-      const evidenceLink = document.querySelector("#evidenceLink");
-      evidenceLink.textContent = copy.evidenceLink;
-      evidenceLink.href = `evidence.html?lang=${encodeURIComponent(state.language)}`;
       const image = document.querySelector("#artImage");
       const artCredit = document.querySelector("#artCredit");
       image.src = window.ramayanaSceneArtwork.render(state.scene);
